@@ -17,4 +17,4 @@ SortCompetition {
 	//Add a custom greeting so your sorter can introduce itself
 	public abstract String greeting();
 }
-
+ 
