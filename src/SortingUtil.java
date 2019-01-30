@@ -4,13 +4,33 @@ public class SortingUtil {
         arr[i] = arr[j];
         arr[j] = t;
     }
-    public static int[] randIntArr(int c){
+    public static int[] randomIntsArr(int c){
         int arr[]=new int[c];
         for (int n=0;n<c;n++){
             arr[n]=(int)(Math.random()*10001);
         }
         return arr;
     }
+
+    public static String[] randomStringArr(int num, int length)
+    {
+        String[] arrString = new String[num];
+        while (num>0)
+        {
+            int i=0;
+            String s = "";
+            while (i<length)
+            {
+                char c = (char)((Math.random()*26)+97);
+                s=s+c;
+                i++;
+            }
+            num--;
+            arrString[num] = s;
+        }
+        return arrString;
+    }
+
     public static boolean isSorted(int[] arr){
         int n=1;
         while(n>0){
@@ -34,4 +54,13 @@ public class SortingUtil {
             return false;
         }
     }
+
+    public static String printIntArr(int[] arr){
+        String output = "";
+        for (int num:arr){
+            output += num+" ";
+        }
+        return output;
+    }
+
 }
