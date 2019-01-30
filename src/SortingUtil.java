@@ -5,7 +5,7 @@ public class SortingUtil {
         arr[j] = t;
     }
 
-    public static int[] randIntArr(int c){
+    public static int[] randomIntsArr(int c){
         int arr[]=new int[c];
         for (int n=0;n<c;n++){
             arr[n]=(int)(Math.random()*10001);
