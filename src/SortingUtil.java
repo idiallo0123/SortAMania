@@ -4,6 +4,7 @@ public class SortingUtil {
         arr[i] = arr[j];
         arr[j] = t;
     }
+
     public static int[] randIntArr(int c){
         int arr[]=new int[c];
         for (int n=0;n<c;n++){
@@ -11,6 +12,26 @@ public class SortingUtil {
         }
         return arr;
     }
+
+    public static String[] randomStringArr(int num, int length)
+    {
+        String [] arr = new String [num];
+        while(num > 0)
+        {
+            int i = 0;
+            String s = "";
+            while(i < length)
+            {
+                char c = (char)((Math.random()*26)+97);
+                s = s + c;
+                i++;
+            }
+            num--;
+            arr[num] = s;
+        }
+        return arr;
+    }
+
     public static boolean isSorted(int[] arr){
         int n=1;
         while(n>0){
@@ -25,6 +46,7 @@ public class SortingUtil {
         }
         return true;
     }
+
     public static boolean checkSum(int[]before,int[]after){
         int arr1=0;
         int arr2=0;
