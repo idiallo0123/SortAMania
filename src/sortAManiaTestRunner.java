@@ -8,9 +8,9 @@ public class sortAManiaTestRunner
         int[] randIntArr = SortingUtil.randomIntsArr(10000); // initialize a random int array
         String[] randStringArr = SortingUtil.randomStringArr(10000, 5); //init a random string array
 
-        System.out.println("Unsorted");
+        System.out.println("----------CHALLENGE 1----------");
+        System.out.print("Unsorted: ");
         SortingUtil.printIntArr(randIntArr); //print out the unsorted array
-
         long time = System.currentTimeMillis(); //start the timer
         int median = team1.challengeOne(randIntArr); //run your challenge one code
         time = System.currentTimeMillis() - time; //stop the time
@@ -19,5 +19,13 @@ public class sortAManiaTestRunner
 
         System.out.println("Sorted");
         SortingUtil.printIntArr(randIntArr); //check if array was sorted correctly
+
+        randIntArr = SortingUtil.randomIntsArr(10000); // initialize a random int array
+        randStringArr = SortingUtil.randomStringArr(10000, 5); //init a random string array
+
+        System.out.println("----------CHALLENGE 2----------");
+        System.out.print("Unsorted: ");
+        SortingUtil.printIntArr(randIntArr); //print out the unsorted array
+
     }
 }
