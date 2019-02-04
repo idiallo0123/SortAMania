@@ -37,6 +37,9 @@ public class sortAManiaTestRunner
         /*challengeThree: Mostly Sorted Big Array
         Data Set - a mostly sorted array of 100,000 integers (>75% of elements are in the correct order)
         Task: Sort the list and return the median*/
+        System.out.println("----------CHALLENGE 3----------");
+        System.out.print("Unsorted: ");
+        SortingUtil.printIntArr(randIntArr); //print out the unsorted array
 
         /*challengeFour: Multi-Dimensional sorting
         Data Set - a multi-dimensional array int[1000][1000] all elements are random integers between 0-10000
