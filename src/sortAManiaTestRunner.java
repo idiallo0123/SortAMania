@@ -28,4 +28,4 @@ public class sortAManiaTestRunner
         SortingUtil.printIntArr(randIntArr); //print out the unsorted array
 
     }
-}
+} 
