@@ -55,12 +55,11 @@ public class SortingUtil {
         }
     }
 
-    public static String printIntArr(int[] arr){
-        String output = "";
-        for (int num:arr){
-            output += num+" ";
-        }
-        return output;
+    public static void printIntArr(int[] arr){
+        int n=arr.length;
+        for (int i=0;i<n;i++)
+            System.out.print(arr[i]+" ");
+        System.out.print('\n');
     }
 
 }
