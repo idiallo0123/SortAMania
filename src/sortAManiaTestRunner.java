@@ -31,9 +31,16 @@ public class sortAManiaTestRunner
         Data Set - an array of 10,000 random strings (strings will be of length 5)
         Task: Sort the list and determine if it contains a given string, return the index of the first instance
         of that string, or -1 if not found*/
-        //System.out.println("----------CHALLENGE 2----------");
-        //System.out.print("Unsorted: ");
-        //SortingUtil.printIntArr(randIntArr); //print out the unsorted array
+        System.out.println("----------CHALLENGE 2----------");
+        System.out.print("Unsorted: ");
+        SortingUtil.printStringArr(randStringArr); //print out the unsorted array
+        long time2 = System.currentTimeMillis(); //start the timer
+        int index = team1.challengeTwo(randStringArr,SortingUtil.randomString(5)); //run your challenge one code
+        time2 = System.currentTimeMillis() - time2; //stop the time
+        System.out.println("Challenge Two Time Taken: " + time2 * 0.001 + " Seconds"); ///print the time
+        System.out.println("Index: "+index);
+        System.out.println("Sorted: ");
+        SortingUtil.printStringArr(randStringArr);
 
         /*challengeThree: Mostly Sorted Big Array
         Data Set - a mostly sorted array of 100,000 integers (>75% of elements are in the correct order)

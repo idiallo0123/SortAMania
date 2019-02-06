@@ -31,6 +31,17 @@ public class SortingUtil {
         return arrString;
     }
 
+    public static String randomString(int length){
+        int i=0;
+        String s=" ";
+        while (i<length){
+            char c=(char)((Math.random()*26)+97);
+            s=s+c;
+            i++;
+        }
+        return s;
+    }
+
     public static boolean isSorted(int[] arr){
         int n=1;
         while(n>0){
@@ -58,6 +69,13 @@ public class SortingUtil {
     public static void printIntArr(int[] arr){
         int n=arr.length;
         for (int i=0;i<n;i++)
+            System.out.print(arr[i]+" ");
+        System.out.print('\n');
+    }
+
+    public static void printStringArr(String[] arr){
+        int n=arr.length;
+        for(int i=0;i<n;i++)
             System.out.print(arr[i]+" ");
         System.out.print('\n');
     }
