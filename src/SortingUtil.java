@@ -31,6 +31,16 @@ public class SortingUtil {
         return arrString;
     }
 
+    public static int[][] randomIntArr(int l,int w){
+        int arr[][]=new int[l][w];
+        for (int x=0;x<l;x++){
+            for (int y=0;y<w;y++){
+                arr[x][y]=(int)(Math.random()*10001);
+            }
+        }
+        return arr;
+    }
+
     public static String randomString(int length){
         int i=0;
         String s=" ";
@@ -78,6 +88,15 @@ public class SortingUtil {
         for(int i=0;i<n;i++)
             System.out.print(arr[i]+" ");
         System.out.print('\n');
+    }
+
+    public static void printIntsArr(int[][]arr){
+        for(int x=0;x<arr.length;x++){
+            for (int y=0;y<arr[x].length;y++){
+                System.out.print(arr[x][y]+" ");
+            }
+            System.out.print('\n');
+        }
     }
 
 }

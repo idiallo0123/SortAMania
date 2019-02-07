@@ -1,4 +1,4 @@
-public class Team1SortCompetition
+public class Team1SortCompetition extends SortCompetition
 {
 
     public int challengeOne(int[]arr) {
@@ -16,6 +16,26 @@ public class Team1SortCompetition
             }
         }
         return -1;
+    }
+
+    public int challengeThree(int[]arr){
+        QuickSort quickSort=new QuickSort();
+        quickSort.sort(arr,0,arr.length-1);
+        return arr[arr.length/2];
+    }
+
+    public int challengeFour(int[][]arr){
+        QuickSort quickSort=new QuickSort();
+        int[]med=new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            quickSort.sort(arr[i],0,arr[i].length-1);
+            med[i]=arr[i][arr[i].length/2];
+        }
+        return med[med.length/2];
+    }
+
+    public String greeting(){
+        return "Hi, this sorter uses quicksort to sort the arrays.";
     }
 
 }
