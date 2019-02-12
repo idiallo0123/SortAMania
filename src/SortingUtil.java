@@ -99,4 +99,8 @@ public class SortingUtil {
         }
     }
 
+    public static int Median(int arr[]){
+        return(arr[(arr.length - 1) / 2] + arr[arr.length / 2]) / 2;
+    }
+
 }

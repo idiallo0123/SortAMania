@@ -23,7 +23,7 @@ public class sortAManiaTestRunner
         System.out.println("Sorted: ");
         SortingUtil.printIntArr(randIntArr); //check if array was sorted correctly
         System.out.println("Median equals: " + median); //print the median you found
-        
+
 
         /*challengeTwo: String sorting and searching
         Data Set - an array of 10,000 random strings (strings will be of length 5)

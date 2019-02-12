@@ -4,7 +4,7 @@ public class Team1SortCompetition extends SortCompetition
     public int challengeOne(int[]arr) {
         QuickSort quickSort=new QuickSort();
         quickSort.sort(arr,0,arr.length-1);
-        return arr[arr.length/2];
+        return SortingUtil.Median(arr);
     }
 
     public int challengeTwo(String[] arr,String query){
@@ -21,7 +21,7 @@ public class Team1SortCompetition extends SortCompetition
     public int challengeThree(int[]arr){
         QuickSort quickSort=new QuickSort();
         quickSort.sort(arr,0,arr.length-1);
-        return arr[arr.length/2];
+        return SortingUtil.Median(arr);
     }
 
     public int challengeFour(int[][]arr){
@@ -29,10 +29,12 @@ public class Team1SortCompetition extends SortCompetition
         int[]med=new int[arr.length];
         for(int i=0;i<arr.length;i++){
             quickSort.sort(arr[i],0,arr[i].length-1);
-            med[i]=arr[i][arr[i].length/2];
         }
-        return med[med.length/2];
-    }
+        for (int i=0;i<arr.length;i++){
+            med[i]=SortingUtil.Median(arr[i]);
+        }
+        return SortingUtil.Median(med);
+}
 
     public String greeting(){
         return "Hi, this sorter uses quicksort to sort the arrays.";
